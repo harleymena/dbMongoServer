@@ -28,4 +28,6 @@ app.use(`/api/${dbName}`, require(`${routes}`));
 app.listen(app.get('port'), () => {
     console.log('BD: ' + dbName);
     console.log('Server port ', app.get('port'));
+    console.log('http://localhost:3000/api/{dbName}');
+    console.log('http://localhost:4242');
 });
